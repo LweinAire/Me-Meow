@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/carbg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.navbar {
+    overflow: hidden;
+    margin: 0;
+    background-color: #F2EFE6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(235, 163, 163);
+}
+
+nav ul li {
+    float: right;
+    list-style: none;
+    margin: 10px 0px;
+    margin-right: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 40px;
+    position: relative;
+        
+}
+
+nav ul li a:hover{
+    text-decoration: none; 
+    background-color: rgb(232, 100, 100);  
+    color: white;
+    padding: 15px 40px;
+    transition: ease-in-out 0.2s;
+    
+}
+
+.header {
+    height: 70px;
+    width: 90%; 
+    padding-left: 50px;
+    color: rgb(232, 100, 100);  
+}
+
+.btn1 {
+    position: relative;
+    top: 100px;
+    right: 22.5%;
+}
+
+.btn1 a {
+    width: 20%;
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(232, 100, 100);
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    left: 29%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.btn1 a:hover {
+    background-color: #F2EFE6;
+    transition: ease-in-out .3s;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(232, 100, 100);
+}
+
+.int {
+    position: relative;
+    top: 100px;
+    padding-left: 100px;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.disc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: 180px;
+    left: 9.5%;
+    font-weight: bold;
+    color:rgb(232, 100, 100);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+footer {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 12%;
+}
+  
+footer div {
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+}
+  
+footer a {
+    color: #FF8C00;
+    text-decoration: none;
+}
+  
+footer a:hover {
+    text-decoration: underline;
+}
+  
+footer p, footer ul {
+    margin: 5px 0;
+}
+  
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+  
+footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer-contact {
+    padding-left: 50px;
+}
+
+.signlog {
+    background-color: white;
+    padding: 20px;
+    width: 20%;
+    position: relative;
+    left: 72%;
+    height: 50%;
+    bottom: 22%;
+    border-radius: 10px;
+    border: 2px solid rgb(232, 100, 100);
+}
+
+.form {
+    position: relative;
+    top: 20px;
+    left: 15%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.email {
+    position: relative;
+    top: 60px;
+    left: 5%;
+    padding: 10px;
+    border-radius: 20px;
+    width: 75%;
+    padding-left: 40px;
+    background-color: #F2EFE6;
+    border: 1px solid #F2EFE6;
+}
+
+.icon1 {
+    position: relative;
+    top: 90px;
+    right: 65%;
+    z-index: 2;
+}
+
+.pass {
+    position: relative;
+    top: 80px;
+    left: 5%;
+    padding: 10px;
+    border-radius: 20px;
+    width: 75%;
+    padding-left: 40px;
+    background-color: #F2EFE6;
+    border: 1px solid #F2EFE6;
+}
+
+.icon2 {
+    position: relative;
+    top: 120px;
+    right: 84%;
+    z-index: 2;
+}
+
+.submit {
+    position: relative;
+    top: 110px;
+    left: 15%;
+    padding: 10px;
+    width: 70%;
+    background-color: rgb(232, 100, 100);
+    border-radius: 20px;
+    color: white;
+    font-family: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+.submit:hover {
+    background-color: #F2EFE6;
+    transition: ease-in-out .3s;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(232, 100, 100);
+}
+
+.signlabel {
+    position: relative;
+    top: 45%;
+    left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.sign {
+    text-decoration: none;
+    color: #FF8C00;
+}
+
+.rem {
+    position: relative;
+    top: 27%;
+    left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.rem input[type="checkbox"] {
+    margin-right: 7px; /* Space between checkbox and label text */
+    cursor: pointer;
+  }
